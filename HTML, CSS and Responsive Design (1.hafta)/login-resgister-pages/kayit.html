@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kayıt Ol</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Kayıt Ol</h2>
+      <form action="#" method="POST">
+        <label for="fullname">İsim-Soyisim:</label>
+        <div class="input-container">
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Adınız ve Soyadınız"
+            required
+          />
+          <i class="fas fa-user"></i>
+        </div>
+
+        <label for="email">Email:</label>
+        <div class="input-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email adresiniz"
+            required
+          />
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <label for="birthdate">Doğum Tarihi:</label>
+        <div class="input-container">
+          <input type="date" name="birthdate" id="birthdate" required />
+          <i class="fas fa-calendar" id="calendar-icon"></i>
+        </div>
+
+        <label for="phone">Telefon:</label>
+        <div class="input-container">
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Telefon numaranız"
+            required
+          />
+          <i class="fas fa-phone"></i>
+        </div>
+
+        <label for="password">Şifre:</label>
+        <div class="input-container">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Şifreniz"
+            required
+          />
+          <i class="fas fa-lock"></i>
+        </div>
+
+        <button type="submit">Kayıt Ol</button>
+      </form>
+      <p>Zaten hesabınız var mı? <a href="index.html">Giriş Yap</a></p>
+    </div>
+  </body>
+</html>
