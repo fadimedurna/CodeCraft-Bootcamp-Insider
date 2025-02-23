@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bob's Burgers Fan Sayfası</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -18,32 +21,88 @@
         <img src="images/logo.png" alt="Bob's Burgers" />
       </div>
       <nav>
-        <button class="menu-toggle">&#9776;</button> 
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
         <ul class="menu">
-          <li><a href="#about">Hakkında</a></li>
-          <li><a href="#characters">Karakterler</a></li>
-          <li><a href="#episodes">Bölümler</a></li>
-          <li><a href="#gallery">Galeri</a></li>
-          <li><a href="#contact">İletişim</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#favorite_scene">Favorite</a></li>
+          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="profile-icon">
+          <i class="fas fa-user-circle"></i>
+        </div>
       </nav>
     </header>
 
+    <div class="hero-section">
+      <a href="https://www.imdb.com/title/tt1561755/" target="_blank"
+        ><h1>Bob's Burgers</h1></a
+      >
+      <img
+        src="images/hero.jpg"
+        alt="Bob's Burgers Poster"
+        class="hero-image"
+      />
+    </div>
+
     <section id="about">
-      <h2>Bob's Burgers Hakkında</h2>
-      <p>
-        Bob’s Burgers, Loren Bouchard tarafından yaratılan popüler bir animasyon
-        dizisidir.
-      </p>
+      <div class="about-card">
+        <h2>About Bob's Burgers</h2>
+        <p>
+          Bob's Burgers is a hilarious animated sitcom that follows the Belcher
+          family as they run their quirky burger joint. Led by the passionate
+          but perpetually unlucky Bob, his enthusiastic wife Linda, and their
+          three unique kids - the awkward Tina, the musical Gene, and the
+          mischievous Louise - the Belchers navigate daily challenges with humor
+          and heart. From bizarre burger specials to wacky neighborhood
+          adventures, Bob's Burgers serves up a perfect blend of family
+          dynamics, offbeat humor, and heartwarming moments that keep viewers
+          coming back for seconds!
+        </p>
+      </div>
     </section>
 
     <section id="characters">
-      <h2>Karakterler</h2>
-      <p>Bob, Linda, Tina, Gene ve Louise’in eğlenceli hikayeleri...</p>
+      <h2>Characters</h2>
+      <div class="character-container">
+        <div class="character-card">
+          <img src="images/bob.jpg" alt="Bob Belcher" />
+          <h3>Bob Belcher</h3>
+          <p>
+            The passionate and creative burger chef who runs Bob's Burgers with
+            unwavering determination, despite constant setbacks.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="images/linda.jpg" alt="Linda Belcher" />
+          <h3>Linda Belcher</h3>
+          <p>
+            Bob's supportive and quirky wife, known for her enthusiasm,
+            spontaneous singing, and unconventional parenting style.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="images/louise.jpg" alt="Louise Belcher" />
+          <h3>Louise Belcher</h3>
+          <p>
+            The youngest Belcher child, recognizable by her pink bunny ears hat.
+            She's mischievous, clever, and often the mastermind behind the
+            family's schemes.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="favorite_scene">
+      <h2>Favorite Scene</h2>
+      <p>En sevilen Bob’s Burgers bölümleri burada!</p>
     </section>
 
     <section id="episodes">
-      <h2>Favori Bölümler</h2>
+      <h2>Bölümler</h2>
       <p>En sevilen Bob’s Burgers bölümleri burada!</p>
     </section>
 

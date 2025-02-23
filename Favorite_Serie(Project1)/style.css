@@ -2,7 +2,7 @@ body {
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
- background-color: #FADA7A;
+  background-color: #fada7a;
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffa500' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: #333;
   text-align: center;
@@ -12,8 +12,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  background-color: #E52020;
-  color: #F8F2DE;
+  background-color: #e52020;
+  color: #f8f2de;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1000;
@@ -31,7 +31,10 @@ header {
 }
 
 nav {
+  display: flex;
+  align-items: center;
   position: relative;
+  margin-right: 30px;
 }
 
 .menu {
@@ -39,30 +42,29 @@ nav {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .menu li {
   margin: 0 10px;
-  padding: 20px;
+  padding: 10px;
   transition: transform 0.3s ease;
 }
 
 .menu li:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
 }
 
 .menu a {
   text-decoration: none;
-  color: #F8F2DE;
+  color: #f8f2de;
   font-size: 20px;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .menu li:hover a {
-    color: #fceab4;
+  color: #fceab4;
 }
 
 /* Hamburger Menü */
@@ -71,9 +73,142 @@ nav {
   font-size: 30px;
   background: none;
   border: none;
-  color: #F8F2DE;
+  color: #f8f2de;
   cursor: pointer;
 }
+
+.profile-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #f8f2de;
+  margin-left: 20px;
+}
+
+.hero-section {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: none;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  color: #e52020;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-section a {
+  text-decoration: none;
+  color: #e52020;
+}
+
+.hero-section h1:hover {
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 80%;
+  height: auto; /* Yüksekliği otomatik ayarlanacak */
+  object-fit: contain;
+  z-index: 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.about-card {
+  background-color: #f8f2de;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 78%;
+  height: auto;
+}
+
+.about-card h2 {
+  color: #e52020;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+#characters {
+  padding: 15px 20px 50px;
+  background-color: #f8f2de;
+}
+
+#characters h2 {
+  text-align: center;
+  color: #e52020;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.character-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.character-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.character-card h3 {
+  color: #e52020;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.character-card p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}
+
 
 @media (max-width: 768px) {
   .logo img {
@@ -86,7 +221,7 @@ nav {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #E52020;
+    background-color: #e52020;
     width: 200px;
   }
 
@@ -102,14 +237,29 @@ nav {
   .menu.active {
     display: flex;
   }
-}
 
-/* Main */
-section {
-  padding: 50px 20px;
-  border-bottom: 2px solid #333;
-}
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
 
-section h2 {
-  color: #E52020
+  .hero-image {
+    width: 95%;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+
+  .character-card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
