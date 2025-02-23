@@ -1,0 +1,115 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+ background-color: #FADA7A;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffa500' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: #333;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #E52020;
+  color: #F8F2DE;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 70px;
+  width: auto;
+  margin-right: 10px;
+}
+
+nav {
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.menu li:hover {
+  transform: translateY(-2px); 
+}
+
+.menu a {
+  text-decoration: none;
+  color: #F8F2DE;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block; 
+}
+
+.menu li:hover a {
+    color: #fceab4;
+}
+
+/* Hamburger Menü */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #F8F2DE;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 40px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #E52020;
+    width: 200px;
+  }
+
+  .menu li {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+/* Main */
+section {
+  padding: 50px 20px;
+  border-bottom: 2px solid #333;
+}
+
+section h2 {
+  color: #E52020
+}
