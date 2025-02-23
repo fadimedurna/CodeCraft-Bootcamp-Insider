@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bob's Burgers Fan Sayfası</title>
+    <title>Favorite TV Series</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
@@ -16,16 +17,18 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" alt="Bob's Burgers" />
-      </div>
+    <header id="sticky-header">
+      <a href="#top" class="logo-top">
+        <div class="logo">
+          <img src="images/logo.png" alt="Bob's Burgers" />
+        </div>
+      </a>
       <nav>
         <button class="menu-toggle" id="menuToggle">&#9776;</button>
         <ul class="menu">
           <li><a href="#about">About</a></li>
           <li><a href="#characters">Characters</a></li>
-          <li><a href="#favorite_scene">Favorite</a></li>
+          <li><a href="#favorite_scene">Favorite Scene</a></li>
           <li><a href="#episodes">Episodes</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -73,6 +76,9 @@
             The passionate and creative burger chef who runs Bob's Burgers with
             unwavering determination, despite constant setbacks.
           </p>
+          <button class="favorite-button" data-character="[Karakter Adı]">
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
         <div class="character-card">
           <img src="images/linda.jpg" alt="Linda Belcher" />
@@ -81,6 +87,9 @@
             Bob's supportive and quirky wife, known for her enthusiasm,
             spontaneous singing, and unconventional parenting style.
           </p>
+          <button class="favorite-button" data-character="[Karakter Adı]">
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
         <div class="character-card">
           <img src="images/louise.jpg" alt="Louise Belcher" />
@@ -90,6 +99,43 @@
             She's mischievous, clever, and often the mastermind behind the
             family's schemes.
           </p>
+          <button class="favorite-button" data-character="[Karakter Adı]">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <div class="character-card">
+          <img src="images/tina.jpg" alt="Tina Belcher" />
+          <h3>Tina Belcher</h3>
+          <p>
+            The awkward and lovable eldest Belcher child, Tina's personality is
+            a quirky "every-girl" transitioning from childhood to adolescence.
+          </p>
+          <button class="favorite-button" data-character="[Karakter Adı]">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <div class="character-card">
+          <img src="images/gene.jpg" alt="Gene Belcher" />
+          <h3>Gene Belcher</h3>
+          <p>
+            The middle Belcher child, Gene is a musical prodigy with a penchant
+            for fart jokes and a heart of gold.
+          </p>
+          <button class="favorite-button" data-character="[Karakter Adı]">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <div class="character-card">
+          <img src="images/teddy.jpg" alt="Teddy" />
+          <h3>Teddy</h3>
+          <p>
+            A loyal customer and friend of the Belchers, Teddy is a lovable but
+            socially awkward handyman who often finds himself in bizarre
+            situations.
+          </p>
+          <button class="favorite-button" data-character="[Karakter Adı]">
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -173,9 +219,9 @@
     </section>
 
     <footer id="contact">
-      <h2>İletişim</h2>
+      <h2>Contact</h2>
       <div class="designer-info">
-        <p>Bu web sayfası Fadime Durna tarafından tasarlanmıştır.</p>
+        <p>This website was designed by Fadime Durna.</p>
         <div class="social-links">
           <a
             href="https://github.com/fadimedurna"

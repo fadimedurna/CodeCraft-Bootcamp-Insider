@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 5px 15px;
   background-color: #e52020;
   color: #f8f2de;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -21,15 +21,27 @@ header {
   z-index: 1000;
 }
 
+#sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo img {
   max-height: 70px;
   width: auto;
   margin-right: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -123,7 +135,7 @@ nav {
 .hero-image {
   width: 80%;
   height: auto;
-  object-fit: contain; 
+  object-fit: contain;
   z-index: 0;
   margin-top: 20px;
   border-radius: 10px;
@@ -177,6 +189,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 20px;
 }
 
 /* Animation */
@@ -190,7 +203,7 @@ nav {
 }
 
 .character-card {
-   background-color: #f9f9f9;
+  background-color: #f9f9f9;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -222,6 +235,30 @@ nav {
   font-size: 0.9rem;
   color: #333;
   line-height: 1.4;
+}
+
+.favorite-button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Renk geçişi için */
+  margin-top: 10px;
+}
+
+.favorite-button.active {
+  background-color: transparent;
+  color: #ff6b6b;
+}
+
+.favorite-button i {
+  font-size: 2em;
+  color: #333;
+}
+
+.favorite-button.active i {
+  color: #ff6b6b;
 }
 
 #favorite_scene {
@@ -287,7 +324,7 @@ nav {
   margin-top: 50px;
 }
 
-#episodes h2{
+#episodes h2 {
   text-align: center;
   color: #e52020;
   font-size: 2rem;
@@ -325,7 +362,7 @@ nav {
   color: #666;
 }
 
-.episode-card p:first-of-type { 
+.episode-card p:first-of-type {
   font-weight: bold;
   color: #444;
 }
@@ -339,6 +376,13 @@ footer {
 
 .designer-info {
   margin-top: 10px;
+}
+
+.designer-info p {
+  margin: 0;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-links {
@@ -355,7 +399,6 @@ footer {
 .social-links a:hover {
   color: #f0f0f0;
 }
-
 
 @media (max-width: 768px) {
   .logo img {
