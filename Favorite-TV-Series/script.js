@@ -1,5 +1,5 @@
-//Sticky headerda smooth scroll işlevselliği
 document.addEventListener("DOMContentLoaded", () => {
+  //Sticky headerda smooth scroll işlevselliği
   document.querySelectorAll('.menu a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -15,10 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
   });
-});
 
-// Favori karakter seçme işlevselliği
-document.addEventListener("DOMContentLoaded", () => {
+  // Favori karakter seçme işlevselliği
   const favoriteButtons = document.querySelectorAll(".favorite-button");
 
   favoriteButtons.forEach((button) => {
@@ -26,10 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.toggle("active");
     });
   });
-});
 
-//Hamburger menü açma ve kapanma
-document.addEventListener("DOMContentLoaded", function () {
+  //Hamburger menü açma ve kapanma
   const menuToggle = document.getElementById("menuToggle");
   const menu = document.getElementById("menu");
 
