@@ -99,6 +99,10 @@ nav {
   margin-left: 20px;
 }
 
+.mobile-login {
+  display: none;
+}
+
 .hero-section {
   position: relative;
   height: auto;
@@ -409,31 +413,57 @@ footer {
     margin-right: 10px;
   }
 
-  .menu {
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+   .menu {
     display: none;
-    flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #e52020;
-    width: 200px;
+    top: calc(100% + 20px);  
+    right: 10px; 
+    width: 200px;  
+    background-color: #444444e0;  
+    padding: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+    .menu::before {
+    content: '';  
+    position: absolute;
+    top: -8px;
+    right: 5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #444444e0;  
+  }
+
+  .menu.active {
+    display: block;
+
   }
 
   .menu li {
-    padding: 10px;
-    text-align: left;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu a {
+    color: #f8f2de;  /* Metin rengi açık renk */
   }
 
   .profile-icon {
     display: none;
   }
 
-  .menu-toggle {
+  .mobile-login {
     display: block;
-  }
-
-  .menu.active {
-    display: flex;
   }
 
   .hero-section h1 {
