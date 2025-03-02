@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Real-Time Task Management App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task Management App</h1>
+      <form id="taskForm">
+        <input type="text" id="taskTitle" placeholder="Task Title" required />
+        <textarea
+          id="taskDescription"
+          placeholder="Task Description"
+        ></textarea>
+        <div class="priority">
+          <p>Priority:</p>
+          <label><input type="radio" name="priority" value="Low" /> Low </label>
+          <label
+            ><input type="radio" name="priority" value="Medium" /> Medium
+          </label>
+          <label
+            ><input type="radio" name="priority" value="High" /> High
+          </label>
+        </div>
+        <button type="submit" id="addTaskBtn">Add Task</button>
+      </form>
+      <div class="filter-sort-container">
+        <button id="filterCompleted" class="filter-btn">
+          <i class="fas fa-check-circle"></i> Completed
+        </button>
+        <button id="sortByPriority" class="sort-btn">
+          Priority <i class="fas fa-sort"></i>
+        </button>
+      </div>
+      <p id="emptyMessage" class="empty-message">Empty List</p>
+      <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
