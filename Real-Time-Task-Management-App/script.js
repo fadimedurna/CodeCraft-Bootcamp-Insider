@@ -11,10 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let isFilterActive = false;
   let sortOrder = "asc";
 
+  // Boş liste mesajını güncelle
   function updateEmptyMessage() {
     emptyMessage.style.display = tasks.length === 0 ? "block" : "none";
   }
 
+  // Yeni görev ekleme
   taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Görev öğesini güncelle
   function updateTaskItem(taskItem, task, index) {
     taskItem.innerHTML = `
     <div>
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     taskItem.dataset.index = index;
   }
 
+  // Tüm görevleri yeniden render et
   function renderTasks() {
     taskList.innerHTML = "";
     tasks.forEach((task, index) => {
@@ -76,14 +80,16 @@ document.addEventListener("DOMContentLoaded", () => {
     e.stopPropagation();
     const target = e.target;
     console.log("Clicked element:", target);
-    console.log("Clicked element class list:", target.classList);
 
     if (target.matches(".complete-btn, .delete-btn")) {
       const taskItem = target.closest("li");
       if (!taskItem) return;
-      const taskIndex = parseInt(taskItem.dataset.index, 10); //
+      const taskIndex = parseInt(taskItem.dataset.index, 10);
+      console.log("Task item:", taskItem);
+      console.log("Task index:", taskIndex);
 
       if (target.classList.contains("complete-btn")) {
+        // Görev tamamlama durumunu değiştirme ve buna göre görev listesini güncelleme
         tasks[taskIndex].completed = !tasks[taskIndex].completed;
         if (isFilterActive && !tasks[taskIndex].completed) {
           taskItem.remove();
@@ -91,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
           updateTaskItem(taskItem, tasks[taskIndex], taskIndex);
         }
       } else if (target.classList.contains("delete-btn")) {
+        //Görevi sil
         tasks.splice(taskIndex, 1);
         taskItem.remove();
         renderTasks();
@@ -98,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Tamamlanan görevleri filtrele
   filterCompletedBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     isFilterActive = !isFilterActive;
@@ -107,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : renderTasks();
   });
 
+  // Görevleri önceliğe göre sırala
   sortByPriorityBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     const priorityOrder = { Low: 1, Medium: 2, High: 3 };
@@ -122,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTasks();
   });
 
+  // Filtrelenmiş görevleri render et
   function renderFilteredTasks(filteredTasks) {
     taskList.innerHTML = "";
     filteredTasks.forEach((task) => {
