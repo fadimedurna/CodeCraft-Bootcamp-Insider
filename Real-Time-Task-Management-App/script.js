@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const taskForm = document.getElementById("taskForm");
-  const taskList = document.getElementById("taskList");
   const taskTitle = document.getElementById("taskTitle");
   const taskDescription = document.getElementById("taskDescription");
+  const taskList = document.getElementById("taskList");
   const filterCompletedBtn = document.getElementById("filterCompleted");
   const sortByPriorityBtn = document.getElementById("sortByPriority");
   const emptyMessage = document.getElementById("emptyMessage");
@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error("Please select a priority!");
       }
 
-      const priority = priorityElement.value;
+      const priority = priorityElement.value;  
       const task = { title, description, priority, completed: false };
       tasks.push(task);
 
       renderTasks();
-      taskForm.reset();
+      taskForm.reset(); 
       taskTitle.focus();
     } catch (error) {
       console.error("Error:", error.message);
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const taskItem = target.closest("li");
       if (!taskItem) return;
       const taskIndex = parseInt(taskItem.dataset.index, 10);
-      console.log("Task item:", taskItem);
+      //console.log("Task item:", taskItem);
       console.log("Task index:", taskIndex);
 
       if (target.classList.contains("complete-btn")) {
@@ -98,8 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       } else if (target.classList.contains("delete-btn")) {
         //Görevi sil
-        tasks.splice(taskIndex, 1);
-        taskItem.remove();
+        tasks.splice(taskIndex, 1); 
+        //console.log("Görev silindi:", taskIndex);
+        taskItem.remove(); 
         renderTasks();
       }
     }

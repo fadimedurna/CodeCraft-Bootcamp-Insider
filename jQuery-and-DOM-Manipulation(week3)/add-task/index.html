@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Task</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      #taskInput {
+        width: 70%;
+        padding: 10px;
+        margin-right: 10px;
+      }
+      #addTask {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #addTask:hover {
+        background-color: #45a049;
+      }
+      #taskList {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Add Task</h1>
+      <input type="text" id="taskInput" placeholder="Enter your task" />
+      <button id="addTask">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#addTask").click(function () {
+          var taskText = $("#taskInput").val();
+          if (taskText !== "") {
+            $("#taskList").append("<li>" + taskText + "</li>");
+            $("#taskInput").val("");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
