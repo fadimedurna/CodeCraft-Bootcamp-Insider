@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Leather Backpack",
+      "price": 131.32,
+      "category": "Fashion",
+      "details": "High-quality leather backpack with multiple compartments. Durable and stylish and easy to clean. This backpack features an adjustable strap for easy adjustments and a built-in pocket for carrying small items.",
+      "link": "https://www.amazon.com/Samsonite-Classic-Leather-Backpack-Brown/dp/B07XW14CLZ?crid=2GNL0U1UYAT4H&dib=eyJ2IjoiMSJ9.-ZvEbEQPa8gDvfKnW1tzPKrcjaGikU9FomHnh-5s3qgvPScNs28iNM-HcF1vq_ziyisedWMueH9YyCfdnrxv-neMEmqvElyYcnh3RTbBfOgHdgP0qZA7pq2ST_hYwJzC3dlbs9bnmkTq1feFQ_5JtmDhbRB5PW8Av0Dmt1wJj9_hz6AFNYkuKTxHxKehVUbYo5zCEpEh_CvT7XQX7Ri0gtsvdAhqQ0l-1dRyEHD_RMM.ZW436XX8lMnDREStmkY5F40zPGHurWAmcds_uTYJpiU&dib_tag=se&keywords=leather%2Bbackpack&qid=1741543676&sprefix=leather%2Bbackpack%2Caps%2C236&sr=8-3&th=1",
+      "image": "https://m.media-amazon.com/images/I/91AML93hBBL._AC_SX466_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Organic Green Tea",
+      "price": 5.3,
+      "category": "Food & Beverages",
+      "details": "100% organic green tea leaves for a refreshing and healthy drink. Made with local, sustainable ingredients. When you drink this tea, enjoy a healthy and refreshing experience.",
+      "link": "https://www.amazon.com/Hyleys-Organic-Tea-Ginger-Flavor/dp/B07ZXNSYPG?crid=2FVG7HT8ITUKR&dib=eyJ2IjoiMSJ9.mmJ7Y68C2J1N6-Xx3kZBn34W1jXfLf-rDwb0fzhUiUbgn1N9eJ9itSA6Zh1NODZFsHVYqF-QDkeQPGuarVBQATHXP4T57JHglLBynuz1ZDYgsMCEE6KNNDnK4T2EJs-Qc7eYJ4a0GoC567b49gdazhZbrAJsiygdda2o8TxtjtHGT58ouESH9jy5ArT7WEbyI-M_wwXVjnZr11aN4yyJPyiwQa8zg7se8uh7l5Yn6A-s6lqfRK_B04bj0hhOSXHA-1nek9pDGJnHG5c3A6PgsZL0gk5SOqU8nHAQOCPEQX70zjbWIszS3mH7bvemNpOn3kF3ua54WrItcgWAn-JVl2WFz2PSYqPGllCcEmGpmeQjJ6KcCEKDQ54F4KzyPQRcxWUxJ9S6-AIjMJvimvpc87qmL7pO-w_9GwRX3AfCF_UIEEpFopTbCKfu5enSSkF9.xmM-ClezjzvW_3RAOf6KqyKixz9B-8HbBDcifiWpEbg&dib_tag=se&keywords=organic%2Bgreen%2Btea&qid=1741544830&sprefix=organic%2Bg%2Caps%2C239&sr=8-6&th=1",
+      "image": "https://m.media-amazon.com/images/I/81tfFhnGS0L._SY679_.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Yoga Mat Pro",
+      "price": 69.99,
+      "category": "Fitness",
+      "details": "Non-slip, eco-friendly yoga mat for comfortable workouts. Made from recycled materials and eco-friendly materials. For yoga lovers, this mat is perfect for beginners and advanced practitioners alike.",
+      "link": "https://www.amazon.com/Plyopic-Ultra-Grip-Pro-Yoga-Mat/dp/B0DJW78GY9?crid=3GAESLZRRHVEF&dib=eyJ2IjoiMSJ9.gU0-3S_CGQ4XK5YbfDhqtMX25OaTNYbu9C644fv9vf_dQqbK6sz8clFK37E48XciSpL49vrYodl1MkO9nGn0fcWvVPoEVrHr_xOYKMKDe3I5Z17Uf8L4ZdO8ovUPHQGcI9cDlDiEY8JEg9Y3-yAi-ajl1SDMWiD0SFV74-OymEV0n673kifN7jD69HAJ-8B4-ItEwL6ZpAwMQjRLhnU9WGeOWPY2SUOqKnYj0fihBrlRmBI5Ya26XeI8ZV-XxfbhPs5IcmO-AuIK7Q9lZpRe1XUioa0E7QWwYygPmPMzprYCnk7fM2rMYxkJcpH6Kmccw-Aqil2boJC0_tylmHqMt-fBraFYPMBC1IeueS1YxNFAf2_2JWfsmyvBKzqtUsgY3YtoCqf4bMyROvMWlde3l6hfeIC1zZ3dsvVC4zg8mQbrPDIjgUQkSuXN55kZYsjq.F9go8lq1dUDwPq7xcvL0eyVVMubAcvSwX9xpourcy80&dib_tag=se&keywords=yoga%2Bmat%2Bpro&qid=1741543749&sprefix=yoga%2Bmat%2Bpro%2Caps%2C243&sr=8-5&th=1",
+      "image": "https://m.media-amazon.com/images/I/61PX1XWMcVL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Classic Wooden Chair",
+      "price": 89.28,
+      "category": "Furniture",
+      "details": "Handcrafted wooden chair with ergonomic design and durable build. Made from locally sourced materials and sustainable materials. It's comfortable and stylish, perfect for both kids and adults.",
+      "link": "https://www.amazon.com/Robin-4-PC-Folding-Chair-Set/dp/B004XYNE52?crid=126Q8KL4N0PWP&dib=eyJ2IjoiMSJ9.rMVMfsgRBB5hUBEKM6WB_LD3pQEtwplSsRT8bTkpMtOm1nZ4SJYJNFaREXlzDjeacfi2QW9TIXMHlFgTP1qopuWAQRCzxpWEUld4aiQLR714lQf9yXP8hCKx6ByOzgfymzZC8TV1h7UnRWCH5uzez47PCwmdQvFFpUXynFTvad4Ozw25ZnKzXxWY69FPulT9gRHZQd5uP4chRRWs5ynFxyOcpFvPEjr2pi6HlBapRWGEqSK1HiG93Oyj7H7RrT2T41F7SUjOole2LtQEw8o_yIavZ5TR8lTP3BPQJWjpR_ZaNATWVJd51D95OWCWLFQ8zLb-h-6mD3NZdFcn_g072mJgqxzuV7Y6fBF6KgHjpwgo0YmJxmo0QRexQTbYaODoIh06CY_2Ctwm0-ni93Q07B7YRl4UwojuZdhtILn1JD3_cmil--8ABVGzAUIIPNQ9.L-dhEtVUYJyrkjlT0QdfZ3L71CN50P4d0eXJmAZwJtA&dib_tag=se&keywords=wooden%2Bchair&qid=1741543852&sprefix=wooden%2Bchai%2Caps%2C245&sr=8-5&th=1",
+      "image": "https://m.media-amazon.com/images/I/71625lWNVVL._AC_SX679_.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Scented Soy Candle",
+      "price": 12.99,
+      "category": "Home Decor",
+      "details": "Long-lasting scented soy candle for a cozy atmosphere. Made from locally sourced materials and sustainable materials. Smells like fresh mint and coconut. This candle is perfect for any occasion.",
+      "link": "https://www.amazon.com/Chesapeake-Bay-Candle-Balance-Harmony/dp/B01N0RSCBI?crid=3A8ZUA7RFD8TZ&dib=eyJ2IjoiMSJ9.w4q5ZI5pLl9YWil5v7LcIGEKoTFg4WXEjRLxR4Yd3kq7G8MEOCZn5gmGyvuvs3b330S469GrcDSScamM9VsCh2_Ww8MDZ-K1yuBfXgJUrIuoemH3iPq72OMx13G0Brv18yJnG3S4WzDuAmLgQ2HasYC6nEIq2wHYei1MCmVNNWh-zJb-FvcR6f40rTF_-XREYZPF4z5Qsymde26Pe18trcPlKYgukyLL7JMDXHHeAQZtKo0YZRsVIiJjupJM2Nca611hTlTrLk2P-dGHV4ZreTK07w9Ro7WlgDRgUdlhxQZ5Aq8Tp4I2v5_98VlaleTVutt5yCv3fOuRij6kK474DNMi6N2H3ma-vJ3m9Vm4_ILQB3YxnAJof48Jfu-hJK5_EYyRSnscQVY-lBusD6Jx3R_IgZz8g1U6EjJi4pOWqMHHFy81YP2futxqX_gpwmyn.K-t2i0JCR5nrGMLjHJIC45HQMLIIKwDM43ROWF9kwcE&dib_tag=se&keywords=soy%2Bscented%2Bcandle&qid=1741543967&sprefix=soy%2Bscented%2Bcandl%2Caps%2C226&sr=8-5&th=1",
+      "image": "https://m.media-amazon.com/images/I/61xhZrufhoL._AC_SX679_.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Bestseller: My Side of the Mountain",
+      "price": 7.99,
+      "category": "Books",
+      "details": "A thrilling bestseller novel that keeps you engaged till the last page. This novel is a must-read for fans of adventure and thrillers. When you reading tou are going to feel like you are in the middle of a great adventure.",
+      "link": "https://www.amazon.com/Side-Mountain-Jean-Craighead-George/dp/0141312424?crid=U07Q7CECF6FT&dib=eyJ2IjoiMSJ9.E48npwzSUnSFWmZjDmSt85IlT9Nvay1v2fvEVfOoE64oZE0arg5lWPtxfbr3qqvHkPE8gDcvrBmCby1I4650KuGCaz5xS8TzkxB2qzm2-RQcLw9_moj7k2BW6dpWI6ea9Jl68_gCfdUKitu-I2AsOtwVwmjK_MsAYJ_5Xaeelb-0xGtCY5b3AimTpy0d6HiQsRidE6Zb38XxBUtduEKH6tur54mYUWNFv_ruNRPzv3c.hpOdgTDNVfwhkXrH64ZMZwOtLEw4xy5K5aCkVNGeR7A&dib_tag=se&keywords=best+seller+book+adventure&qid=1741544696&sprefix=best+seller+book+adventur%2Caps%2C217&sr=8-9",
+      "image": "https://m.media-amazon.com/images/I/416YmqeGp5L._SY445_SX342_.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Customizable Gaming Console",
+      "price": 99.99,
+      "category": "Electronics",
+      "details": "Play your favorite games with this customizable gaming console. For every age group, this console offers different games and accessories. This console is perfect for gaming enthusiasts and fans of all ages.",
+      "link": "https://www.amazon.com/R36MAX-Handheld-Console-Portable-4000mAh/dp/B0DTDD4K7G?crid=2DQO005AQKIKO&dib=eyJ2IjoiMSJ9.7-su6Lry_VRLaKAWu_Qs2N8jA20w9tdarzWoBby-nDMaFMWwwhTH41X37yADX17QR973SzooBdlAzwiNWKCkxr_bOaBJ8tPzHnoJa-XC3jTBzxssCKGeY2otHEPsVo_BDsbpWCzj7pUN0JuPaEXIoEa8ukffLcI3ckHBNVN6CgpQ9JWhUiyTT4Pkg17mpyuSLW2mbdfJ4K7Lxr_bKnO2gYMwT3h_dstEpCBebK2IdBczlQkPQ_5YD0YFdRmrnhPhNI5IGUarPyGNh1dbon6UDplicDkuyKRueek5E8J9e-NTAwd9-Ec_FMtjEMLj_HkjcTUgIAf96EvrIib9hi7sDb_GTLhBkMfyHO05UkUx-F909huMt4Qs5F1nm9oUDRFQ0Qbj0dFTlLGg4FZ688kkQb-f_dlpvDAkAqiPQiQt_7w8krmCwzuKXWG8rMyjp_AS.Ce50oUb80N7Js1bpBkKq5sjnCSfGukkyVneYGNgNQas&dib_tag=se&keywords=customizable%2Bgaming%2Bconsole&qid=1741545496&sprefix=%2Caps%2C261&sr=8-6&th=1",
+      "image": "https://m.media-amazon.com/images/I/71u9EWfkYVL._AC_SX679_.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Fancy Shoes",
+      "price": 36.99,
+      "category": "Fashion",
+      "details": "Comfortable and stylish shoes with a unique design. If you want to look unique and stylish, this shoes are perfect for you. They are made from recycled materials and sustainable materials. This shoes are perfect for every occasion.",
+      "link": "https://www.amazon.com/DREAM-PAIRS-Sandals-Madison-W-Silver-Glitter/dp/B0BRP54BZH?crid=3VW8LB3DQWRVJ&dib=eyJ2IjoiMSJ9.TMQ-N9t1Lobbpyqg3sXEFxmiQiwEwyfUVeh-dqrVqGz5xDIAr0Izq9UYS_R8SN4iFfvFL1d75m-mke61DZKjFk03smKBiQwMYkz8op0CqNfiqcbM_BCXqG75z130KNe0K_sZ4PQPTz1b3DgerH4kt7UW9PXaHofpOIhSEaTkx9D8-dFEFnwinKZ4GyW6NkohKm82lL8A2raZAHaIznC4S5-zYmhZ7Y7l9yc6upu38k6X4MF3lkBQJM_917kjmBbcTkrm5JQ93zQjnN-XOJMuwc4zy4zBzkICRkiarkhkAqWXkxJEU7G7Ch274m6mWaE0cbt0Hq5_F29KA3oj0boRij5kVYKkkdUlfFrGkhpPGYUaHVBpQgD7-Gv731uxLhfbHwr_IvA52jQv2hlys9l9t5en-N95njrtdNzuI8Gv7--K7K-NpID5337QHkw-oKyR.Pm8jtq4OYXmrJNUit2qS_Br3yTlGHSVv-nu1fJ2T1jk&dib_tag=se&keywords=fancy+shoes&qid=1741545266&rnid=121075130011&s=apparel&sprefix=fancy+shoe%2Caps%2C245&sr=1-23",
+      "image": "https://m.media-amazon.com/images/I/71wz1efx5+L._AC_SY575_.jpg"
+    }
+  ]
+}
