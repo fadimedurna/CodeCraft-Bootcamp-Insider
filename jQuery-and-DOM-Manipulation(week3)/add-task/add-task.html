@@ -120,7 +120,7 @@
           //debugger;
           console.log(
             "Removing task:",
-            $(this).parent().find(".task-content").text()
+            $(this).parent().find(".task-content").text() //NOT:eğer function yerine arrow func. olarak belirtseydik bu 'this' çalışmayacaktı!!!
           );
           $(this).parent().remove();
         });
