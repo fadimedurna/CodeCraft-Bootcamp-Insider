@@ -1,7 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "Smartphone X",
       "price": 799.99,
       "category": "Electronics",
@@ -9,7 +8,6 @@
       "link": "https://example.com/smartphone-x"
     },
     {
-      "id": 2,
       "name": "Laptop Pro",
       "price": 1299.99,
       "category": "Electronics",
@@ -17,7 +15,6 @@
       "link": "https://example.com/laptop-pro"
     },
     {
-      "id": 3,
       "name": "Wireless Headphones",
       "price": 149.99,
       "category": "Audio",
@@ -25,7 +22,6 @@
       "link": "https://example.com/wireless-headphones"
     },
     {
-      "id": 4,
       "name": "Running Shoes",
       "price": 89.99,
       "category": "Sports",
@@ -33,7 +29,6 @@
       "link": "https://example.com/running-shoes"
     },
     {
-      "id": 5,
       "name": "Coffee Maker",
       "price": 59.99,
       "category": "Home",
@@ -41,44 +36,11 @@
       "link": "https://example.com/coffee-maker"
     },
     {
-      "id": 6,
       "name": "Fitness Tracker",
       "price": 79.99,
       "category": "Electronics",
       "description": "Water-resistant fitness tracker with heart rate monitor.",
       "link": "https://example.com/fitness-tracker"
-    },
-    {
-      "id": 7,
-      "name": "Bluetooth Speaker",
-      "price": 49.99,
-      "category": "Audio",
-      "description": "Portable Bluetooth speaker with 20-hour battery life.",
-      "link": "https://example.com/bluetooth-speaker"
-    },
-    {
-      "id": 8,
-      "name": "Backpack",
-      "price": 39.99,
-      "category": "Fashion",
-      "description": "Durable backpack with laptop compartment and water bottle pockets.",
-      "link": "https://example.com/backpack"
-    },
-    {
-      "id": 9,
-      "name": "Smart Watch",
-      "price": 199.99,
-      "category": "Electronics",
-      "description": "Smart watch with fitness tracking and notification features.",
-      "link": "https://example.com/smart-watch"
-    },
-    {
-      "id": 10,
-      "name": "Desk Lamp",
-      "price": 29.99,
-      "category": "Home",
-      "description": "Adjustable desk lamp with multiple brightness levels.",
-      "link": "https://example.com/desk-lamp"
     }
   ]
 }
