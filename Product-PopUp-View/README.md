@@ -1,1 +1,1 @@
-Boş bir .html dosyasını arama motorunda açtıktan sonra console içerisine script.js kodunu yapıştırırsanız da çalışacaktır.
+Boş bir .html dosyasını arama motorunda açıp console içerisine script.js kodunu yapıştırınca çalışacaktır.
