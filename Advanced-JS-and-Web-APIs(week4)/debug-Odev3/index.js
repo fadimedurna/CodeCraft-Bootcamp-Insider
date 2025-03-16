@@ -22,7 +22,7 @@ class ShoppingCart {
       }
 
       //SORUN2:Stok Kontrolü Hatalı - Stok 0 Olmadan Yetersiz Stok Uyarısı Veriyor(çözüm)
-      if (product.stock < quantity) {
+      if (product.stock < quantity) { 
         throw new Error("Yetersiz stok!");
       }
 
@@ -46,6 +46,9 @@ class ShoppingCart {
 
       this.calculateTotal();
       this.updateUI();
+      //SORUN7:(1)
+      document.dispatchEvent(new Event("stockUpdate")); // Bu satır eklendi
+    
     } catch (error) {
       console.error("Ürün ekleme hatası:", error);
       this.showError(error.message);
@@ -66,13 +69,15 @@ class ShoppingCart {
       const product = products.find((p) => p.id === productId);
 
       if (product) {
-        //SORUN5:çözüm-sabit değer yerine item.quantity
+        //SORUN5:sabit değer yerine item.quantity ekleniyor(çözüm)
         product.stock += item.quantity;
       }
 
       this.items.splice(itemIndex, 1);
       this.calculateTotal();
       this.updateUI();
+      //SORUN7:(2)
+      document.dispatchEvent(new Event("stockUpdate")); // Bu satır eklendi
     } catch (error) {
       console.error("Ürün silme hatası:", error);
       this.showError(error.message);
@@ -124,6 +129,7 @@ class ShoppingCart {
     }
   }
 
+  //SORUN6:Geçersiz indirim kodu hata mesajı birikimi
   showError(message) {
     const errorElement = document.getElementById("error");
     if (errorElement) {
