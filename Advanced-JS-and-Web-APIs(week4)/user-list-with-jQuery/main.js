@@ -1,7 +1,7 @@
 (async () => {
   const appendLocation = "#user-list"; // Append edilecek ana selector, değiştirilebilir.
 
-  // jQuery kütüphanesini dinamik olarak yükle
+  // jQuery yükleme
   if (typeof jQuery === "undefined") {
     const script = document.createElement("script");
     script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
@@ -73,18 +73,18 @@
 
     $("<style>").text(styles).appendTo("head");
 
-    // Başlık ekle
+    // Başlık 
     if (!$(".app-title").length) {
       $(appendLocation).before('<h2 class="app-title">Kullanıcı Listesi</h2>');
     }
 
-    // Container sınıfı ekle
+    // appendLocation içerisine container
     if (!$(appendLocation).hasClass("user-container")) {
       $(appendLocation).addClass("user-container");
     }
   };
 
-  // Kullanıcıları localStorage'dan getir veya API'den çek
+  // User'ları localStorage'dan getirme veya API'den çekme
   const fetchUsers = async () => {
     addStyles(); // Stiller ekleme
 
@@ -98,12 +98,12 @@
     }
   };
 
-  // Expire süresi dolmuş mu kontrol et
+  // Expire süresi kontrolü
   const isExpired = () =>
     !localStorage.getItem("expire") ||
     Date.now() > localStorage.getItem("expire");
 
-  // Kullanıcıları render et
+  // Kullanıcı render etme
   const renderUsers = (users) => {
     const $container = $(appendLocation);
     $container.empty();
