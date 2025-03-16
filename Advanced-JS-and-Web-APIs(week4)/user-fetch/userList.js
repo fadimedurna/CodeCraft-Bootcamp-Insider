@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Sayfaya stil ekle
+  // Sayfaya stili
   const addStyles = () => {
     const styleElement = document.createElement("style");
     styleElement.textContent = `
@@ -72,9 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     document.head.appendChild(styleElement);
   };
+  //Stil ekleme fonksiyonu çağrılır
   addStyles();
 
-  //Fetch Users data from API
+  //User datalarını Api ile çekme
   const fetchUsers = () => {
     return new Promise((resolve, reject) => {
       fetch("https://jsonplaceholder.typicode.com/users")
