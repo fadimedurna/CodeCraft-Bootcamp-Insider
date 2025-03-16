@@ -21,7 +21,7 @@
       }
       .user-item {
         padding: 12px 15px;
-        margin-bottom: 8px;
+        margin: 8px 0;
         background-color: #f8f9fa;
         border-radius: 5px;
         border-left: 4px solid #007bff;
@@ -53,30 +53,14 @@
         font-size: 14px;
         margin-top: 15px;
         transition: background-color 0.3s;
+        display: block;
       }
       #reload-button:hover {
         background-color: #218838;
       }
-      .app-title {
-        color: #343a40;
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 24px;
-      }
-      .empty-message {
-        text-align: center;
-        color: #6c757d;
-        font-style: italic;
-        margin: 20px 0;
-      }
     `;
 
     $("<style>").text(styles).appendTo("head");
-
-    // Başlık 
-    if (!$(".app-title").length) {
-      $(appendLocation).before('<h2 class="app-title">Kullanıcı Listesi</h2>');
-    }
 
     // appendLocation içerisine container
     if (!$(appendLocation).hasClass("user-container")) {
@@ -106,9 +90,12 @@
   // Kullanıcı render etme
   const renderUsers = (users) => {
     const $container = $(appendLocation);
-    $container.empty();
+
+    // appendLocation container'ı full boşaltmak yerine sadece mevcut kullanıcı öğeleri kaldırıldı
+    $container.find(".user-item, #reload-button").remove();
+
     if (users.length === 0) {
-      $container.append('<p class="empty-message">Kullanıcı listesi boş</p>');
+      console.log("Kullanıcı listesi boş.");
     } else {
       users.forEach(({ id, name, email }) => {
         const $userItem = $(`
