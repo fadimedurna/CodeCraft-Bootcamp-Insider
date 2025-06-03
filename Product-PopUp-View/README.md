@@ -1,4 +1,20 @@
-# Product-popup-view
+# Product-popup-view(ENG)
+
+## Setup and Usage
+
+This project works through a simple `.html` file located in the same directory as the `products.json` file. Follow the steps below to run the project:
+
+1. Inside the `Product-popup-view` folder, create an **empty `.html` file**. For example: `index.html`.
+2. Open this `.html` file in a web browser (e.g., Chrome, Firefox).
+3. Right-click on the page and select **"Inspect"** to open Developer Tools.
+4. Go to the **Console** tab.
+5. Copy **all the JavaScript code** from the `script.js` file, paste it into the console, and press Enter.
+6. The product listing and popup detail view features will now be active.
+
+> **Note:** This is a basic demo setup. To ensure the project works correctly, make sure that both `products.json` and `script.js` are located in the same directory as the HTML file.
+
+
+# Product-popup-view(TR)
 
 ## Kurulum ve Kullanım
 
